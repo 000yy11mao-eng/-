@@ -1,0 +1,6 @@
+{
+  "name": "Smart School Operations",
+  "description": "Automated Scheduling & Grade Assessment Portal (المنظومة الإلكترونية الشاملة لإدارة المدارس)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

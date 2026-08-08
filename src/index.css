@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-arabic: 'Cairo', 'Tajawal', system-ui, sans-serif;
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+@media print {
+  @page { margin: 1cm; size: A4 portrait; }
+  body { 
+    background-color: white !important; 
+    color: black !important;
+  }
+  .print\:hidden { display: none !important; }
+  .printable-table table { 
+    border-collapse: collapse !important; 
+    width: 100% !important;
+  }
+  .printable-table th, .printable-table td { 
+    border: 1px solid black !important; 
+    padding: 4px !important; 
+    color: black !important;
+    background: white !important;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
